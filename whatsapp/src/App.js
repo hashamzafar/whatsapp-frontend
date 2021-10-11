@@ -15,18 +15,14 @@ function App() {
   return (
 
     <div className="App">
-      <Main/>
-    </div>
-
-    <>
+      <Main />
       <HashRouter basename='/'>
         <div className="App">
           <Route exact path='/login' render={(routerProps) => <Login />} />
           <Route exact path='/register' render={(routerProps) => <Registration />} />
         </div>
       </HashRouter>
-    </>
-
+    </div>
   );
 }
 

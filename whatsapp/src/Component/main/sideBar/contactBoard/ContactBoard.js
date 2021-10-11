@@ -1,11 +1,12 @@
 import React from 'react'
-import {Row} from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
+import SingleContact from './singleContact/SingleContact'
 
 function ContactBoard() {
     return (
-        <Row>
-            something here
-        </Row>
+        <Container>
+            <SingleContact/>
+        </Container>
     )
 }
 
