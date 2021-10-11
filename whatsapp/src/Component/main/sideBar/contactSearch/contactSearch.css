@@ -1,3 +1,9 @@
 #contactSearch {
     padding: 10px;
+    background-color: #F6F6F6
+}
+
+#contactSearch .input-group input{
+    border-radius: 20px !important;
+    border: none;
 }

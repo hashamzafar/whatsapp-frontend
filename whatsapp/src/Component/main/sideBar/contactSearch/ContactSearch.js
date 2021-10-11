@@ -9,7 +9,7 @@ function ContactSearch() {
                 <InputGroup.Prepend>
                     <InputGroup.Radio aria-label="Radio button for following text input" />
                 </InputGroup.Prepend>
-                <FormControl aria-label="Text input with radio button" />
+                <FormControl aria-label="Text input with radio button" placeholder="Search or start new chat" />
             </InputGroup>
         </Row>
     )
