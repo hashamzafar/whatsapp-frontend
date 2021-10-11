@@ -1,0 +1,26 @@
+#profileMenu {
+  background-color: #ededed;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+#profileMenu div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#profileMenu div:last-child div {
+  width: 50px
+}
+
+#profileMenu div:last-child svg {
+  font-size: 35px;
+  padding: 7px;
+}
+
+#profileMenu img {
+  width: 38px;
+  border-radius: 50%;
+  margin-left: 5px;
+}

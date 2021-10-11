@@ -1,11 +1,23 @@
 import { Route, HashRouter } from 'react-router-dom'
 import './App.css';
+
+
+import Main from './Component/main/Main.js'
+
+
+
 import Registration from './Component/registration/Registration'
 import Login from './Component/login/Login'
 
 
+
 function App() {
   return (
+
+    <div className="App">
+      <Main/>
+    </div>
+
     <>
       <HashRouter basename='/'>
         <div className="App">
@@ -14,6 +26,7 @@ function App() {
         </div>
       </HashRouter>
     </>
+
   );
 }
 
