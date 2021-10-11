@@ -13,12 +13,12 @@ import Login from './Component/login/Login'
 
 function App() {
   return (
-
-    <div className="App">
-      <Main/>
-    </div>
-
     <>
+      <div className="App">
+        <Main />
+      </div>
+
+
       <HashRouter basename='/'>
         <div className="App">
           <Route exact path='/login' render={(routerProps) => <Login />} />
