@@ -5,10 +5,10 @@ import MainBar from './mainBar/MainBar.js'
 
 function Main() {
     return (
-        <Container>
+        <Container fluid>
             <Row>
-                <SideBar className='col-4' />
-                <MainBar className='col-8' />
+                <SideBar/>
+                <MainBar/>
             </Row>
         </Container>
     )

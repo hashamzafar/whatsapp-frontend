@@ -2,16 +2,15 @@ import React from 'react'
 import ProfileMenu from './profileMenu/ProfileMenu.js'
 import ContactSearch from './contactSearch/ContactSearch.js'
 import ContactBoard from './contactBoard/ContactBoard'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Col } from 'react-bootstrap'
+import './sidebar.css'
 
 function SideBar() {
     return (
-        <Col>
-            <Row className='flex-column'>
-                <ProfileMenu/>
-                <ContactSearch/>
-                <ContactBoard/>
-            </Row>
+        <Col xs={5} sm={4} id='sidebar'>
+            <ProfileMenu />
+            <ContactSearch />
+            <ContactBoard />
         </Col>
     )
 }
