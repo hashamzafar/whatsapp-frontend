@@ -1,10 +1,16 @@
 import React from 'react'
+import {Row} from 'react-bootstrap'
+import ContactProfileOptions from './contactProfileOptions/ContactProfileOptions'
+import MainChatBoard from './mainChatBoard/MainChatBoard'
+import ChatInputArea from './chatInputArea/ChatInputArea'
 
 function MainBar() {
     return (
-        <div>
-            here is the mainbar
-        </div>
+        <Row className='flex-column'>
+            <ContactProfileOptions/>
+            <MainChatBoard/>
+            <ChatInputArea/>
+        </Row>
     )
 }
 
