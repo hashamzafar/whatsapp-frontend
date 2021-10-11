@@ -2,6 +2,7 @@ import { Form, Button, Container } from 'react-bootstrap'
 import { FaFacebook } from "react-icons/fa"
 import { FcGoogle } from "react-icons/fc"
 import "./login.css"
+import { Link } from "react-router-dom"
 const Login = () => (
 
     <Container>
@@ -33,7 +34,7 @@ const Login = () => (
                 <FaFacebook className="bg-primary" /> Log in with facebook
             </Button>
             <Button variant="primary" type="submit" className="my-2 btn-large w-100" >
-                <a href=""> Register</a>
+                <Link to="/register" > Register</Link>
             </Button>
         </Form>
     </Container>
