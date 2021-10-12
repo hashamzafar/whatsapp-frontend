@@ -1,44 +1,44 @@
 #contactProfile {
-  background-color: #ededed;
-  padding: 10px;
-  justify-content: space-between;
-  border-left: 1px solid rgba(192, 192, 192, 0.438);
-  order: 1;
+	background-color: #ededed;
+	padding: 10px;
+	justify-content: space-between;
+	border-left: 1px solid rgba(192, 192, 192, 0.438);
+	order: 1;
 }
 
 #contactProfile p {
-  padding: 0px;
-  margin: 0px;
-  font-size: 12px;
+	padding: 0px;
+	margin: 0px;
+	font-size: 12px;
 }
 
 #contactProfile div:first-child {
-  margin-left: 15px;
-  align-items: center;
+	margin-left: 15px;
+	align-items: center;
 }
 #contactProfile > div:last-child {
-  margin-left: 15px;
-  align-items: center;
+	margin-left: 15px;
+	align-items: center;
 }
 
 #contactProfile svg {
-    font-size: 35px;
-  padding: 7px;
+	font-size: 35px;
+	padding: 7px;
 }
 
 #contactProfile div div {
-  margin-left: 15px;
+	margin-left: 15px;
 }
 
 #contactProfile p {
-  padding: 0px;
-  margin: 0px;
-  font-size: 12px;
+	padding: 0px;
+	margin: 0px;
+	font-size: 12px;
 }
 
 #contactProfile img {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  margin-left: 5px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	margin-left: 5px;
 }
