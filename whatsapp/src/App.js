@@ -8,7 +8,9 @@ import Login from './Component/login/Login'
 
 function App() {
   return (
+
     <>
+
       <HashRouter basename='/'>
         <div className="App">
           <Route exact path="/main" render={(routerProps) => <Main />} />
@@ -17,7 +19,6 @@ function App() {
         </div>
       </HashRouter>
     </>
-
   );
 }
 
