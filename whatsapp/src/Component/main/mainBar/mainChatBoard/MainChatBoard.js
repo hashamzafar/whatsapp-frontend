@@ -7,11 +7,28 @@ import Message from './message/Message.js'
 function MainChatBoard({ messages }) {
     return (
         <Row id="mainchatboard">
-            <ScrollToBottom>
-                {messages && messages.map((message, i) => <Message key={i} message={message} />)}
+            <ScrollToBottom className='scrollToBottom' >
+                {/* {messages && messages.map((message, i) => <Message key={i} message={message} />)}
                 <div id='message'>
                     hi there
-                </div>
+                </div> */}
+                <Message value={false} />
+                <Message value={false} />
+                <Message value={false} />
+                <Message value={true} />
+                <Message value={true} />
+                <Message value={true} />
+                <Message value={true} />
+                <Message value={true} />
+                <Message value={true} />
+                <Message value={true} />
+                <Message value={true} />
+                <Message value={true} />
+                <Message value={true} />
+                <Message value={true} />
+                <Message value={true} />
+                <Message value={true} />
+     
             </ScrollToBottom>
         </Row>
     )

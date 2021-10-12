@@ -2,6 +2,7 @@
 	background-color: #ededed;
 	padding: 10px;
 	justify-content: space-between;
+	height:65px
 }
 
 #profileMenu div:last-child {
