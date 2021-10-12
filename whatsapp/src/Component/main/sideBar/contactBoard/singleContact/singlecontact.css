@@ -1,32 +1,32 @@
 #singleContact {
-  padding: 6px;
-  flex-wrap: nowrap;
-  height: 80px;
-  justify-content: space-between;
+	padding: 6px;
+	flex-wrap: nowrap;
+	height: 80px;
+	justify-content: space-between;
 }
 
 #singleContact .details {
-  display: flex;
-  font-size: 15px;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(192, 192, 192, 0.479);
-  padding: 0px;
+	display: flex;
+	font-size: 15px;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(192, 192, 192, 0.479);
+	padding: 0px;
 }
 
 #singleContact h4 {
-  font-size: 17px;
-  margin: 0px;
+	font-size: 17px;
+	margin: 0px;
 }
 
 #singleContact p {
-  margin: 0px;
-  padding: 0px;
+	margin: 0px;
+	padding: 0px;
 }
 
 #singleContact img {
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  padding: 5px;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	padding: 5px;
 }

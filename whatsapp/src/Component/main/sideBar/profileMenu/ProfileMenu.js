@@ -8,7 +8,7 @@ function ProfileMenu() {
     return (
         <Row id='profileMenu'>
             <div>
-                <img src='https://picsum.photos/200' alt='profileImage' />
+                <img src='https://picsum.photos/200' alt='profileImage' className="ml-3" />
             </div>
             <div>
                 <div>

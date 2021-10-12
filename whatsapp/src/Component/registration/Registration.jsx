@@ -39,8 +39,7 @@ const Registration = () => {
 
     return (
         <>
-            <img src="https://image.similarpng.com/very-thumbnail/2020/07/Whatsapp-icon-vector-PNG.png" width="300" height="300" alt="" />
-            <h3 id="title">Join to Whatsapp</h3>
+
             <Formik
                 onSubmit={onSubmit}
                 initialValues={{
@@ -53,6 +52,8 @@ const Registration = () => {
             >
                 {(props) => (
                     <Container className="col-md-8">
+                        <img src="https://image.similarpng.com/very-thumbnail/2020/07/Whatsapp-icon-vector-PNG.png" width="300" height="300" alt="" />
+                        <h3 id="title">Join to Whatsapp</h3>
                         <Form>
                             <div className="form-group">
                                 <label htmlFor="name">
