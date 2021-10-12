@@ -38,8 +38,6 @@ const Login = () => (
                 </div>
                 <div className="form-group">
                     <label >
-                        {" "}
-
                         Password :
                     </label>
                     <Field
@@ -53,20 +51,23 @@ const Login = () => (
                     <Form.Check type="checkbox" label="Remember me" />
                 </Form.Group>
                 <Button variant="success" type="submit" className="my-2 btn btn-large w-100" id="btn">
-                    <Link to="/main" className="link">Log in</Link>
+                    <Link to="/main" className="link">      Log in</Link>
                 </Button>
-                <Button variant="light" type="submit" className="my-2 btn btn-large w-100 border" id="btn">
-                    <FcGoogle className="bg-light" /> Log in with google
-                </Button>
+                <a href="http://google.com" target="_blank" >
+                    <Button variant="light" type="submit" className="my-2 btn btn-large w-100 border" id="btn">
+                        <FcGoogle className="bg-light" /> Log in with google
+                    </Button></a>
                 <Button variant="primary" type="submit" className="my-2 btn btn-large w-100" id="btn" >
                     <FaFacebook className="bg-primary" /> Log in with facebook
                 </Button>
+
                 <Button variant="primary" type="submit" className="my-2 btn-large w-100 btn" id="btn" >
-                    <Link to="/register" className="link"> Register</Link>
+                    <Link to="/register" className="link">         Register</Link>
                 </Button>
+
             </Form>
         </Container>
-    </Formik>
+    </Formik >
 
 
 )
