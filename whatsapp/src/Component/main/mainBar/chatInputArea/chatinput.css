@@ -1,0 +1,29 @@
+#chatInputArea {
+  background-color: #ededed;
+  padding: 10px;
+  border-left: 1px solid rgba(192, 192, 192, 0.438);
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  flex-wrap: nowrap;
+  /* justify-content: space-between; */
+}
+
+#chatInputArea .inputicons {
+    width: 38px;
+    align-items: center;
+    text-align: center;
+}
+
+#chatInputArea .inputicons svg {
+  font-size: 33px;
+  padding: 7px;
+}
+
+#chatInputArea .input-group input {
+  border-radius: 25px;
+  min-width: 600px;
+  flex: 1;
+  display: flex;
+}
