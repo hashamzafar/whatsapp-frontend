@@ -1,7 +1,3 @@
-
-#login {
-	margin-top: 50px;
-}
 .link {
 	color: #fff;
 }
@@ -15,4 +11,7 @@
 
 .link:hover {
 	color: #fff;
+}
+.margin {
+	margin-left: 400px;
 }

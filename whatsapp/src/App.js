@@ -3,9 +3,10 @@ import "./App.css";
 import Main from "./Component/main/Main.js";
 import Registration from "./Component/registration/Registration";
 import Login from "./Component/login/Login";
-
+import { useState, useEffect } from 'react'
 function App() {
   // console.log("env.URL", process.env.URL);
+  // const [userData, setUserData] = useState("")
   return (
     <>
       <HashRouter basename="/">
