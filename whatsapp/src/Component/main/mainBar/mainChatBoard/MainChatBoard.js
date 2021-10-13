@@ -13,7 +13,6 @@ function MainChatBoard({ messages }) {
     socket.on("connect", () => {
       console.log("connection STARTED");
       console.log(socket.id);
-      socket.on("welcome");
     });
   }, []);
   return (
