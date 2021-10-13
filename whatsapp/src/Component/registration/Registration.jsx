@@ -114,7 +114,7 @@ const Registration = () => {
                                 type="submit"
                                 className="btn btn-success my-2 btn-large w-100"
                             >
-                                <Link to="/" id="link">      Register</Link>
+                                <Link to="/" id="link">  Register</Link>
                             </button>
 
                         </Form>

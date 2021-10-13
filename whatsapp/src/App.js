@@ -5,7 +5,6 @@ import Registration from './Component/registration/Registration'
 import Login from './Component/login/Login'
 
 
-
 function App() {
   return (
     <>
