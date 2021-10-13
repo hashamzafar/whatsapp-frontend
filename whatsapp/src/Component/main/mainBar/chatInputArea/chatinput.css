@@ -11,9 +11,9 @@
 }
 
 #chatInputArea .inputicons {
-    width: 38px;
-    align-items: center;
-    text-align: center;
+  width: 38px;
+  align-items: center;
+  text-align: center;
 }
 
 #chatInputArea .inputicons svg {
@@ -23,7 +23,7 @@
 
 #chatInputArea .input-group input {
   border-radius: 25px;
-  min-width: 600px;
-  flex: 1;
   display: flex;
 }
+
+

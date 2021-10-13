@@ -5,7 +5,7 @@ import MainBar from './mainBar/MainBar.js'
 
 function Main() {
     return (
-        <Container fluid>
+        <Container fluid id='main'>
             <Row>
                 <SideBar/>
                 <MainBar/>

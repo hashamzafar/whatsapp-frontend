@@ -1,10 +1,21 @@
 import React from 'react'
+import './message.css'
 
-function Message() {
+function Message({ value }) {
+
+
     return (
-        <div>
-            some message
-        </div>
+        <>
+            {value ?
+                <div id="message">
+                    <span className='currentUser'>Hi Joe</span>
+                </div> :
+                <div id="messageDifferent">
+                    <span className='contactMember'>Hi Donald!</span>
+                </div>
+            }
+        </>
+
     )
 }
 

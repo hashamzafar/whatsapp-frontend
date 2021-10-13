@@ -1,0 +1,20 @@
+#main > .row {
+  flex-wrap: nowrap;
+  display: flex;
+}
+
+/* R E M O V I N G   B O R D E R _ S H A D O W */
+
+.form-control:focus {
+  outline: none !important;
+  border-color: none !important;
+  box-shadow: none !important;
+}
+
+/* A D D I N G  S C R O L L _ T O _ B O T T O M _ F U N C T I O N*/
+
+.scrollToBottom {
+  padding: 1% 0;
+  overflow: auto;
+  flex: auto;
+}

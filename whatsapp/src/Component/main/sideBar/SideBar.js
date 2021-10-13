@@ -7,7 +7,7 @@ import './sidebar.css'
 
 function SideBar() {
     return (
-        <Col xs={5} sm={4} id='sidebar'>
+        <Col id='sidebar'>
             <ProfileMenu />
             <ContactSearch />
             <ContactBoard />

@@ -1,12 +1,5 @@
 #mainchatboard {
   background-color: white;
-  height: 100%;
-}
-
-#message {
-  background-color: #dcf8c6;
-  padding: 4px;
-  justify-content: flex-end;
-  border-radius: 7px;
-  display: flex;
+  height: 88vh;
+  flex-direction: column-reverse;
 }
