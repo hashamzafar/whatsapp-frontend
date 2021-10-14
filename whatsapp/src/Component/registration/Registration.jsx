@@ -1,4 +1,3 @@
-// import { Formik, Field, Form } from "formik";
 import { useState } from "react";
 import { Container } from "react-bootstrap";
 import { withRouter } from "react-router-dom";
@@ -19,41 +18,11 @@ const Registration = (props) => {
       [id]: value,
     }));
   };
-  //   const onSubmit = (values, actions) => {
-  //     console.log(values);
-  //     createUser(values);
-  //   };
 
-  //   const createUser = async (values) => {
-  //     console.log("inside create user");
-
-  //     try {
-  //       let response = await fetch(
-  //         `https://what-s-app.herokuapp.com/users/account`,
-  //         {
-  //           method: "POST",
-  //           headers: {
-  //             "Content-Type": "application/json",
-  //           },
-  //           body: JSON.stringify(values),
-  //         }
-  //       );
-  //       if (response.ok) {
-  //         alert("USER SAVED!");
-  //         let dataRequested = await response.json();
-  //         console.log(dataRequested);
-  //         // window.localStorage.setItem("user_Token", dataRequested.access_token);
-  //       } else {
-  //         alert("User not created");
-  //       }
-  //     } catch (e) {
-  //       return e;
-  //     }
-  //   };
   const submitInfo = async (e) => {
     e.preventDefault();
     try {
-      const paylpad = {
+      const payload = {
         username: info.username,
         email: info.email,
         password: info.password,
@@ -66,7 +35,7 @@ const Registration = (props) => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(paylpad),
+          body: JSON.stringify(payload),
         }
       );
       if (response.ok) {
@@ -83,15 +52,6 @@ const Registration = (props) => {
 
   return (
     <>
-      {/* <Formik
-        onSubmit={onSubmit}
-        initialValues={{
-          username: "",
-          email: "",
-          url: "",
-          password: "",
-        }}
-      > */}
       {/* {(props) =>  */}(
       <Container className="col-md-8">
         <div className="margin">
@@ -138,33 +98,11 @@ const Registration = (props) => {
               onChange={handleChange}
             />
           </div>
-
-          {/* <div className="form-group">
-            <label htmlFor="username">Picture url :</label>
-            <input
-              id="avatar"
-              className="form-control"
-              name="avatar"
-              type="avatar"
-              value={info.avatar}
-              onChange={handleChange}
-            />
-          </div> */}
-
-          <button
-            id="btn"
-            type="submit"
-            className="btn btn-success my-2 btn-large w-100"
-          >
-            {/* <Link to="/" id="link"> */}
-            {/* {" "} */}
+          <button id="btn" type="submit" className="btn btn-success my-2 btn-large w-100">
             Register
-            {/* </Link> */}
           </button>
         </form>
       </Container>
-      ){/* } */}
-      {/* </Formik> */}
     </>
   );
 };
