@@ -1,27 +1,54 @@
 #profileMenu {
-	background-color: #ededed;
-	padding: 10px;
-	justify-content: space-between;
-	height:65px
+  background-color: #ededed;
+  padding: 10px;
+  justify-content: space-between;
+  height: 65px;
+  position: relative;
 }
 
-#profileMenu div:last-child {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+#profileMenu > div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #profileMenu div:last-child div {
-	width: 50px;
+  width: 50px;
 }
 
 #profileMenu div:last-child svg {
-	font-size: 35px;
-	padding: 7px;
+  font-size: 35px;
+  padding: 7px;
+  cursor: pointer;
 }
 
 #profileMenu img {
-	width: 38px;
-	border-radius: 50%;
-	margin-left: 5px;
+  width: 38px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+#profileMenu #dropDown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: -60px;
+  right: 40px;
+  z-index: 4;
+  width: 150px;
+  font-size: 10px;
+  text-align: center;
+}
+
+#profileMenu #dropDown div {
+  width: 100%;
+  background-color: white;
+  font-size: 18px;
+  border: 1px solid rgba(192, 192, 192, 0.349);
+  padding: 5px;
+  cursor: pointer;
+}
+
+#profileMenu #dropDown div:hover {
+  background-color: rgb(224, 223, 223)
 }

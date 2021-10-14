@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./singlecontact.css";
 import { Row } from "react-bootstrap";
 
 function SingleContact({ chats }) {
+  
   return (
     <Row id="singleContact">
       <img src={chats.avatar} alt='profileImage' />

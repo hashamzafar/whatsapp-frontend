@@ -2,8 +2,13 @@ import { applyMiddleware, combineReducers, createStore, compose } from "redux";
 import queryValueReducer from "../reducers/queryReducer.js";
 import thunk from "redux-thunk";
 import currentChatDataBaseReducer from '../reducers/chatDataReducer'
+import chatRoomReducer from "../reducers/chatRoomReducer.js";
 
 export const initialState = {
+
+    chatRoom: {
+        create: false
+    },
 
     chat: {
         list: [],
@@ -14,11 +19,14 @@ export const initialState = {
     searchValue: {
         query: "",
     },
+
+
 };
 
 const combinedReducers = combineReducers({
     searchValue: queryValueReducer,
     chat: currentChatDataBaseReducer,
+    chatRoom: chatRoomReducer
 });
 
 const configureStore = createStore(
