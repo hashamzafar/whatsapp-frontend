@@ -2,13 +2,13 @@ import React from 'react'
 import './singlecontact.css'
 import { Row } from 'react-bootstrap'
 
-function SingleContact() {
+function SingleContact({ chats }) {
     return (
         <Row id="singleContact">
-            <img src='https://picsum.photos/200' alt='profileImage' />
+            <img src={chats.avatar} alt='profileImage' />
             <div className='details'>
                 <div>
-                    <span>Contact Name</span>
+                    <span>{chats.members[0].username}</span>
                     <span>time</span>
                 </div>
                 <div>
