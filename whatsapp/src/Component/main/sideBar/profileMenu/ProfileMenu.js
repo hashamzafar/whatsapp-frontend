@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Row } from 'react-bootstrap'
 import './ProfileMenu.css'
 import { BiMessageDetail, BiDotsVerticalRounded } from 'react-icons/bi'
@@ -10,12 +10,27 @@ function ProfileMenu() {
 
     const [dropDown, setDropDown] = useState(false)
     const dispatch = useDispatch()
+    const ref = useRef()
 
+    useEffect(() => {
+        const checkIfClickedOutside = e => {
+            // If the menu is open and the clicked target is not within the menu,
+            // then close the menu
+            if (dropDown && ref.current && !ref.current.contains(e.target)) {
+                setDropDown(false)
+            }
+        }
 
+        document.addEventListener("mousedown", checkIfClickedOutside)
 
+        return () => {
+            // Cleanup the event listener
+            document.removeEventListener("mousedown", checkIfClickedOutside)
+        }
+    }, [dropDown])
 
     return (
-        <Row id='profileMenu'>
+        <Row id='profileMenu' ref={ref}>
             <div>
                 <img src='https://picsum.photos/200' alt='profileImage' className="ml-3" />
             </div>
@@ -34,7 +49,7 @@ function ProfileMenu() {
                     <div id='dropDown'>
                         <div onClick={() => {
                             dispatch(chatRoomAction(true))
-                            setDropDown(false)
+                            /*  setDropDown(false) */
                         }}> New Group</div>
                         <div> Log Oot </div>
                     </div>
