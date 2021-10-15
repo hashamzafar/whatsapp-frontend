@@ -4,7 +4,7 @@ import './mainchatboard.css'
 import ScrollToBottom from 'react-scroll-to-bottom'
 import Message from './message/Message.js'
 
-function MainChatBoard({ messages }) {
+function MainChatBoard({ user }) {
     return (
         <Row id="mainchatboard">
             <ScrollToBottom className='scrollToBottom' >
@@ -12,9 +12,9 @@ function MainChatBoard({ messages }) {
                 <div id='message'>
                     hi there
                 </div> */}
+                <Message value={false} user={user} />
                 <Message value={false} />
                 <Message value={false} />
-                <Message value={false} />
                 <Message value={true} />
                 <Message value={true} />
                 <Message value={true} />
@@ -28,7 +28,7 @@ function MainChatBoard({ messages }) {
                 <Message value={true} />
                 <Message value={true} />
                 <Message value={true} />
-     
+
             </ScrollToBottom>
         </Row>
     )

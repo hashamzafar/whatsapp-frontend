@@ -32,12 +32,15 @@ function ProfileMenu() {
                 {
                     dropDown &&
                     <div id='dropDown'>
-                        <div onClick={() => dispatch(chatRoomAction(true))}> New Group</div>
+                        <div onClick={() => {
+                            dispatch(chatRoomAction(true))
+                            setDropDown(false)
+                        }}> New Group</div>
                         <div> Log Oot </div>
                     </div>
                 }
             </div>
-        </Row>
+        </Row >
     )
 }
 

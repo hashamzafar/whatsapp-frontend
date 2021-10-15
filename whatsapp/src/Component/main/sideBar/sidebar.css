@@ -5,3 +5,22 @@
   min-width: 300px;
   border-right: 1px solid rgba(216, 216, 216, 0.541);
 }
+
+#sidebar #addChatButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#sidebar #addChatButton svg {
+  cursor: pointer;
+  color: rgb(39, 172, 39);
+  width: 60px;
+  height: 60px;
+}
+
+#sidebar #addChatButton svg:hover {
+
+  color: rgba(39, 172, 39, 0.877);
+
+}

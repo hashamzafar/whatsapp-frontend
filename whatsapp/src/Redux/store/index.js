@@ -3,6 +3,8 @@ import queryValueReducer from "../reducers/queryReducer.js";
 import thunk from "redux-thunk";
 import currentChatDataBaseReducer from '../reducers/chatDataReducer'
 import chatRoomReducer from "../reducers/chatRoomReducer.js";
+import addNewChatRoomReducer from '../reducers/addNewChatRoomReducer.js'
+import selectChatRoomReducer from "../reducers/selectChatRoomReducer.js";
 
 export const initialState = {
 
@@ -20,13 +22,22 @@ export const initialState = {
         query: "",
     },
 
+    newChatRoom: {
+        members: [],
+    },
+
+    selectChatRoom: {
+        chats: [],
+    },
 
 };
 
 const combinedReducers = combineReducers({
     searchValue: queryValueReducer,
     chat: currentChatDataBaseReducer,
-    chatRoom: chatRoomReducer
+    chatRoom: chatRoomReducer,
+    newChatRoom: addNewChatRoomReducer,
+    selectChatRoom: selectChatRoomReducer
 });
 
 const configureStore = createStore(

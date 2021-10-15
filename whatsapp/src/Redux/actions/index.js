@@ -1,4 +1,4 @@
-import { ADD_QUERY, FILL_CHAT_DATA, FILL_DATA_LOADING, FILL_DATA_ERROR, ADD_CHAT_ROOM } from "./types.js"
+import { ADD_QUERY, FILL_CHAT_DATA, FILL_DATA_LOADING, FILL_DATA_ERROR, ADD_CHAT_ROOM, NEW_CHAT_ROOM, SELECT_CHAT_ROOM } from "./types.js"
 
 export const searchQueryAction = (queryValue) => {
     return (dispatch, getState) => {
@@ -14,6 +14,24 @@ export const chatRoomAction = (boolean) => {
         dispatch({
             type: ADD_CHAT_ROOM,
             payload: boolean
+        })
+    }
+}
+
+export const newChatAction = (value) => {
+    return (dispatch, getState) => {
+        dispatch({
+            type: NEW_CHAT_ROOM,
+            payload: value
+        })
+    }
+}
+
+export const selectChatAction = (value) => {
+    return (dispatch, getState) => {
+        dispatch({
+            type: SELECT_CHAT_ROOM,
+            payload: value
         })
     }
 }
