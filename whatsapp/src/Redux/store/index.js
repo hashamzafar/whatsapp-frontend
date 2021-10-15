@@ -5,6 +5,7 @@ import currentChatDataBaseReducer from '../reducers/chatDataReducer'
 import chatRoomReducer from "../reducers/chatRoomReducer.js";
 import addNewChatRoomReducer from '../reducers/addNewChatRoomReducer.js'
 import selectChatRoomReducer from "../reducers/selectChatRoomReducer.js";
+import singleChatDataReducer from "../reducers/singleChatDataReducer.js";
 
 export const initialState = {
 
@@ -14,6 +15,12 @@ export const initialState = {
 
     chat: {
         list: [],
+        loading: false,
+        error: false
+    },
+
+    singleChat: {
+        chat: [],
         loading: false,
         error: false
     },
@@ -37,7 +44,8 @@ const combinedReducers = combineReducers({
     chat: currentChatDataBaseReducer,
     chatRoom: chatRoomReducer,
     newChatRoom: addNewChatRoomReducer,
-    selectChatRoom: selectChatRoomReducer
+    selectChatRoom: selectChatRoomReducer,
+    singleChat: singleChatDataReducer
 });
 
 const configureStore = createStore(

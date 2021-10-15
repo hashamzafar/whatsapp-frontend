@@ -2,13 +2,16 @@ import React from "react";
 import "./singlecontact.css";
 import { Row } from "react-bootstrap";
 import { useDispatch, useSelector } from 'react-redux'
-import { selectChatAction } from '../../../../../Redux/actions/index.js'
+import { fillChatSingleDataBaseAction, selectChatAction } from '../../../../../Redux/actions/index.js'
 function SingleContact({ chats }) {
 
   const dispatch = useDispatch()
 
   return (
-    <Row id="singleContact" onClick={() => dispatch(selectChatAction(chats._id))}>
+    <Row id="singleContact" onClick={() => {
+      dispatch(selectChatAction(chats._id))
+      dispatch(fillChatSingleDataBaseAction())
+    }}>
       <img src={chats.members[0].avatar} alt='profileImage' />
       <div className='details'>
         <div>
@@ -19,7 +22,7 @@ function SingleContact({ chats }) {
           <p>last message</p>
         </div>
       </div>
-    </Row>
+    </Row >
   )
 }
 

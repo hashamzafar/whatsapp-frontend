@@ -12,8 +12,6 @@ function ContactBoard() {
     const chats = useSelector(state => state.chat.list)
     const chatroom = useSelector(state => state.chatRoom.create)
     const newChatRoomMember = useSelector(state => state.newChatRoom.members)
-    // const newChatRoomMember = useSelector(state => state.newChatRoom.members)
-
 
 
     useEffect(() => {
