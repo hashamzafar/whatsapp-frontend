@@ -50,7 +50,7 @@ function ProfileMenu(props) {
                     <div id='dropDown'>
                         <div onClick={() => {
                             dispatch(chatRoomAction(true))
-                            /*  setDropDown(false) */
+                            setDropDown(false) 
                         }}> New Group</div>
                         <div onClick={() => {
                             localStorage.removeItem('Token');

@@ -52,7 +52,6 @@ const Registration = (props) => {
 
   return (
     <>
-      {/* {(props) =>  */}(
       <Container className="col-md-8" id='register'>
         <Row>
           <Col md={6}>
