@@ -11,10 +11,15 @@ import { chatRoomAction, newChatAction, fillChatDataBaseAction } from '../../../
 function SideBar() {
 
     const newChatRoomMember = useSelector(state => state.newChatRoom.members)
+    const newChatRoomMembers = useSelector(state => state.newChatRoom)
     const dispatch = useDispatch()
-    let payload = { members: [newChatRoomMember] }
+    let payload = newChatRoomMember.length > 1 ? { members: newChatRoomMember } : { members: [newChatRoomMember] }
+
 
     const addMembers = async () => {
+        console.log('newChatRoomMember', newChatRoomMember);
+        console.log('newChatRoomMembers', newChatRoomMembers);
+        console.log(payload);
         try {
             const response = await fetch(
                 `https://what-s-app.herokuapp.com/chats`,

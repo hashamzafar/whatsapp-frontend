@@ -1,4 +1,4 @@
-#name {
+#username {
 	border-radius: 50px;
 }
 #email {
@@ -22,4 +22,22 @@
 }
 .margin {
 	margin-left: 400px;
+}
+
+#register .row {
+	flex-direction: column;
+	align-items: center;
+	margin-top: 100px;
+}
+
+#register #logoReg {
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#register img {
+	width: 150px;
 }

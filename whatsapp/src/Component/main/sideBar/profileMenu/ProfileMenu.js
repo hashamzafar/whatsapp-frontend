@@ -5,8 +5,9 @@ import { BiMessageDetail, BiDotsVerticalRounded } from 'react-icons/bi'
 import { FaCircleNotch } from 'react-icons/fa'
 import { useDispatch } from 'react-redux'
 import { chatRoomAction } from '../../../../Redux/actions/index.js'
+import { withRouter } from "react-router-dom";
 
-function ProfileMenu() {
+function ProfileMenu(props) {
 
     const [dropDown, setDropDown] = useState(false)
     const dispatch = useDispatch()
@@ -36,7 +37,10 @@ function ProfileMenu() {
                             dispatch(chatRoomAction(true))
                             setDropDown(false)
                         }}> New Group</div>
-                        <div> Log Oot </div>
+                        <div onClick={() => {
+                            localStorage.removeItem('Token');
+                            props.history.push("/")
+                        }}> Log Out </div>
                     </div>
                 }
             </div>
@@ -44,4 +48,4 @@ function ProfileMenu() {
     )
 }
 
-export default ProfileMenu
+export default withRouter(ProfileMenu)

@@ -8,7 +8,7 @@ const queryValueReducer = (state = initialState.newChatRoom, action) => {
 
             return {
                 ...state,
-                members: action.payload
+                members: [...state.members, action.payload]
             }
 
         default:
