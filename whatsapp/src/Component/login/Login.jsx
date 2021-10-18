@@ -8,7 +8,6 @@ import { Formik, Field } from "formik"
 const Login = () => (
 
     <Formik
-
         initialValues={{
             email: "",
             password: "",
@@ -68,10 +67,5 @@ const Login = () => (
             </Form>
         </Container>
     </Formik >
-
-
 )
-
-
-
 export default Login
